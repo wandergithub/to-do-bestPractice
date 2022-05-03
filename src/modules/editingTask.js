@@ -25,7 +25,7 @@ function editingTask(event) {
   const p = event.currentTarget;
   icon.addEventListener('click', () => {
     const list = JSON.parse(localStorage.getItem('Tasks'));
-    const newlist = list.filter(task => task.index !== Number(p.classList[0].slice(5)))
+    const newlist = list.filter((task) => task.index !== Number(p.classList[0].slice(5)));
     let newindex = 0;
     elementLi.remove();
     newlist.forEach((element) => {

@@ -1,3 +1,2 @@
-const tasksList = [
-];
+const tasksList = [];
 export default tasksList;
